@@ -33,7 +33,7 @@ open class HTTPClient: NSObject, Client, URLSessionDelegate, URLSessionTaskDeleg
     
     /// Subclasses can override this method to provide configuration options during init
     /// (changing a configuration's properties once the session has been created has no effect)
-    public func makeSessionConfiguration() -> URLSessionConfiguration {
+    open func makeSessionConfiguration() -> URLSessionConfiguration {
         return URLSessionConfiguration.default
     }
 }
